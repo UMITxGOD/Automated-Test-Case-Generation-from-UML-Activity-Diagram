@@ -1,0 +1,29 @@
+digraph user_system{
+    subgraph cluster_user{
+        label="User";
+        start [shape=circle];
+        end [shape=circle];
+        open_login_page [label="Open Login Page",shape=rectangle];
+        merge_node [label="Merge Node" , shape=diamond];
+        enter_username_and_password [label="Enter Username and Password" , shape=rectangle]
+        start -> open_login_page
+        merge_node -> enter_username_and_password;
+    }
+    subgraph cluster_system{
+        label="System";
+        display_login_page [label="Display Login Page",shape=rectangle];
+        decision_node [label="Decision Node" , shape=diamond];
+        invalid_username_and_password [label="Invalid Username and password" , shape=rectangle];
+        user_has_successfully_login [label="User Has Successfully Login" , shape=rectangle];
+        display_home_page [label="Display Home Page" , shape=rectangle];
+        decision_node -> invalid_username_and_password [label="Failed"];
+        decision_node -> user_has_successfully_login[label="Success"];
+        user_has_successfully_login -> display_home_page
+    }
+    open_login_page -> display_login_page;
+    display_login_page -> merge_node;
+    invalid_username_and_password -> merge_node ; 
+    enter_username_and_password -> decision_node [label="To Sequence"];
+    display_home_page -> end ; 
+}
+

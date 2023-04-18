@@ -1,0 +1,21 @@
+digraph "com.example:demo:jar:1.0-SNAPSHOT" { 
+	"com.example:demo:jar:1.0-SNAPSHOT" -> "junit:junit:jar:4.11:test" ; 
+	"com.example:demo:jar:1.0-SNAPSHOT" -> "com.paypal.digraph:digraph-parser:jar:1.0:compile" ; 
+	"com.example:demo:jar:1.0-SNAPSHOT" -> "guru.nidi:graphviz-java:jar:0.18.1:compile" ; 
+	"com.example:demo:jar:1.0-SNAPSHOT" -> "ch.qos.logback:logback-classic:jar:1.2.3:compile" ; 
+	"com.example:demo:jar:1.0-SNAPSHOT" -> "com.googlecode.json-simple:json-simple:jar:1.1.1:compile" ; 
+	"junit:junit:jar:4.11:test" -> "org.hamcrest:hamcrest-core:jar:1.3:test" ; 
+	"com.paypal.digraph:digraph-parser:jar:1.0:compile" -> "org.antlr:antlr4-runtime:jar:4.2:compile" ; 
+	"org.antlr:antlr4-runtime:jar:4.2:compile" -> "org.abego.treelayout:org.abego.treelayout.core:jar:1.0.1:compile" ; 
+	"org.antlr:antlr4-runtime:jar:4.2:compile" -> "org.antlr:antlr4-annotations:jar:4.2:compile" ; 
+	"guru.nidi:graphviz-java:jar:0.18.1:compile" -> "org.webjars.npm:viz.js-graphviz-java:jar:2.1.3:compile" ; 
+	"guru.nidi:graphviz-java:jar:0.18.1:compile" -> "guru.nidi.com.kitfox:svgSalamander:jar:1.1.3:compile" ; 
+	"guru.nidi:graphviz-java:jar:0.18.1:compile" -> "net.arnx:nashorn-promise:jar:0.1.1:compile" ; 
+	"guru.nidi:graphviz-java:jar:0.18.1:compile" -> "org.apache.commons:commons-exec:jar:1.3:compile" ; 
+	"guru.nidi:graphviz-java:jar:0.18.1:compile" -> "com.google.code.findbugs:jsr305:jar:3.0.2:compile" ; 
+	"guru.nidi:graphviz-java:jar:0.18.1:compile" -> "org.slf4j:jcl-over-slf4j:jar:1.7.30:compile" ; 
+	"guru.nidi:graphviz-java:jar:0.18.1:compile" -> "org.slf4j:jul-to-slf4j:jar:1.7.30:compile" ; 
+	"guru.nidi:graphviz-java:jar:0.18.1:compile" -> "guru.nidi.com.eclipsesource.j2v8:j2v8_linux_x86_64:jar:4.6.0:compile" ; 
+	"guru.nidi:graphviz-java:jar:0.18.1:compile" -> "org.slf4j:slf4j-api:jar:1.7.30:compile" ; 
+	"ch.qos.logback:logback-classic:jar:1.2.3:compile" -> "ch.qos.logback:logback-core:jar:1.2.3:compile" ; 
+ } 
